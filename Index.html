@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS\styles.css"/>
-    <script>src="main.js"</script>
+    <link rel="stylesheet" href="CSS/styles.css">
     <title>Pokedex</title>
 </head>
 <body>
-    <header>
-        <img src="img\Pokédex_logo.png" alt="Logo pokedex">
-        <h1>Pokedex</h1>
-    </header>
-    <main>
-        <section id="search-container">
-            <input type="text" id="poke-name" placeholder="Quien es ese pokemon?">
+    <div>
+        <img src="img/Pokédex_logo.png" alt="Logo pokedex">
+        <div id="search-container">
+            <input type="text" id="poke-name" placeholder="¿Quién es ese pokemon?">
             <button id="search-button">Buscar</button>
-        </section>
-        <article id="pokemom-info" class="hidden">
+        </div>
+        <div id="pokemon-info" class="hidden">
             <div id="pokemon-details">
-                <h2 id="Pokemon-name-info"></h2>
+                <h2 id="pokemon-name-info"></h2>
                 <img id="pokemon-image" src="" alt="Imagen del pokemon">
-                <p id="Descripcion pokemon"></p>
-                <ul id="skills">
-
+                <p id="descripcion-pokemon"></p>
+                <ul id="movimientos-pokemon">
                 </ul>
-                <button id="evolve-button" class="hidden"> Evolucionar</button>
+                <button id="evolve-button" class="hidden">Evolucionar</button>
             </div>
-        </article>
-    </main>
-    <a id="home-link" class="hidden" href="#">Regresar</a>
+        </div>
+    </div>
 
-    
-        
+
+    <a id="home-link" href="#">Volver al inicio</a>
+    <script src="Js\main.js"></script>
+
 </body>
 </html>
