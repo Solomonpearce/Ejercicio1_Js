@@ -25,3 +25,45 @@ body{
     margin: 0 auto 20px;
     display: block;
 }
+
+#search-container{
+    margin-bottom: 20px;
+}
+
+#poke-name{
+    padding: 10px;
+    width: 60%;
+}
+
+#search-button{
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button:hover{
+    background-color: #0056b3;
+}
+
+#pokemon-info{
+    text-align:left;
+}
+.hidden{
+    display: none;
+}
+#description-pokemon{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+#movimientos-pokemon{
+    list-style: none;
+    padding: 0;
+}
+
+#movimientos-pokemon li{
+    margin-bottom: 5px;
+}
