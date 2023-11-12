@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pokeNameInput = document.getElementById("poke-name");
   const pokemonInfo = document.getElementById("pokemon-info");
   const evolveButton = document.getElementById("evolve-button");
-  // const homeLink=document.getElementById('home-link');
+  const homeLink=document.getElementById('home-link');
 
   searchButton.addEventListener("click", async () => {
     //Nombre de pokemon ingresado
@@ -57,21 +57,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const descripcion=flavorTextEntries.find(entry=>entry.language.name==='es').flavor_text;
     return descripcion;
     }
+
+  function resetPage() {
+    pokemonInfo.classList.add("hidden");
+    evolveButton.classList.add("hidden");
+    pokeNameInput.value = "";
+    pokeNameInput.focus();
+  }
+  homeLink.addEventListener("click",resetPage);
 });
 
-// evolveButton.addEventListener('click',async ()=>{
-//     //Nombre de pokemon ingresado
-//     const evolucionURL='';
-//     const evolutionResponse=await fetch(evolucionURL);
-//     if(evolutionResponse.ok){
-//         const evolutionData=await evolutionResponse.json();
-//         showPokemonInfo(evolutionData);
-//     }else{
-//         console.error("Error al cargar los detalles de evolucion",error);
-//     }
-// });
-// homeLink.addEventListener('click',()=>{
-//     pokemonInfo.classList.add('hidden');
-//     evolveButton.classList.add('hidden');
-//     pokeNameInput.value='';
-// });
