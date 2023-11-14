@@ -112,6 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     return response.json();
   }
+
+  //Manejo de evoluciones. --- Queda faltando manejo del arbol de evolucion de pokemones como eevee. 
   function getEvolutions(evoChain, pokemonName) {
     let evolutions = [];
     let foundPokemon = false;
