@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     descripcionPokemon.textContent = `Descripción del pokemon: ${descripcion}`;
 
     habilidadesPokemon.innerHTML = "";
-    data.abilities.forEach((ability) => {
+    data.abilities.slice(0, 5).forEach((ability) => {
       const li = document.createElement("li");
       li.textContent = ability.ability.name;
       habilidadesPokemon.appendChild(li);

@@ -68,6 +68,15 @@ body{
     margin-bottom: 5px;
 }
 
+#habilidades-pokemon{
+    list-style: none;
+    padding: 0;
+}
+
+#movimientos-pokemon li{
+    margin-bottom: 5px;
+}
+
 #home-link{
     display: block;
     margin-top: 20px;
