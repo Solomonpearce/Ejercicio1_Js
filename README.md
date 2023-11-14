@@ -30,6 +30,3 @@ Para usar la aplicación, los usuarios deben ingresar el nombre de un Pokémon e
 
 El diseño de la aplicación se controla con el archivo `styles.css`. Este archivo contiene las reglas de estilo CSS que se aplican a los elementos HTML en `index.html`.
 
-## Desarrollo Futuro
-
-En el futuro, se podrían agregar más características a la aplicación, como la capacidad de buscar Pokémon por tipo o la capacidad de ver todas las evoluciones de un Pokémon en lugar de solo la siguiente.
